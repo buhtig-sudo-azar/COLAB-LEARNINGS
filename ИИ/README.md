@@ -30,24 +30,24 @@
 | 13  | Мультимодальность          | CLIP, VQA, объединение текста и изображений                    |
 | 14  | GAN и генерация            | Генеративные сети, генерация изображений                       |
 | 15  | MLOps и продакшен          | Мониторинг, деплой, CI/CD для ML                               |
-| 16  | Splunk Fraud Detection     | Обнаружение мошенничества, правила, ML-модели ([PEN/](ИИ/PEN/16_splunk_fraud.ipynb)) |
+| 16  | Splunk Fraud Detection     | Обнаружение мошенничества, правила, ML-модели ([PEN/](../PEN/16_splunk_fraud.ipynb)) |
 
 ## Структура папок
 
 ```
-ИИ/
-├── 01_what_is_ml.ipynb
-├── 02_pytorch_intro.ipynb
-├── ...
-├── 15_mlops.ipynb
-├── 16_splunk_fraud.ipynb       -> перенесён в PEN/
-├── README.md
-└── PEN/
-    └── 16_splunk_fraud.ipynb     # Splunk Fraud Detection
+COLAB-LEARNINGS/
+├── ИИ/                            # основной ML/DL курс (ноутбуки 01-15)
+│   ├── 01_what_is_ml.ipynb
+│   ├── 02_pytorch_intro.ipynb
+│   ├── ...
+│   ├── 15_mlops.ipynb
+│   └── README.md
+└── PEN/                           # security / fraud detection
+    └── 16_splunk_fraud.ipynb      # Splunk Fraud Detection
 ```
 
-- **Корневая папка `ИИ/`** — основные учебные ноутбуки курса (01-15)
-- **Папка `ИИ/PEN/`** — специализированные ноутбуки по security/fraud detection. Ноутбук 16 (Splunk Fraud Detection) вынесен сюда, так как тематически относится к обнаружению мошенничества и аномалий, а не к базовому ML/DL курсу.
+- **`ИИ/`** — основные учебные ноутбуки курса по ML и DL (модули 01-15)
+- **`PEN/`** — отдельная папка на уровне `ИИ/`, содержащая ноутбуки по security, fraud detection и аномалиям. Ноутбук 16 (Splunk Fraud Detection) вынесен сюда, так как тематически относится к security, а не к базовому ML/DL курсу.
 
 ## Как пользоваться
 
@@ -57,7 +57,7 @@
 4. Меняйте параметры через виджеты и наблюдайте результаты
 5. Запустите FastAPI-сервер и тестируйте через HTTP-запросы
 
-> **Ноутбук 16** расположен в отдельной папке [`ИИ/PEN/`](ИИ/PEN/) — там собраны материалы по security и fraud detection.
+> **Ноутбук 16** расположен в отдельной папке [`PEN/`](../PEN/) (на уровне `ИИ/`) — там собраны материалы по security и fraud detection.
 
 ## Требования
 
