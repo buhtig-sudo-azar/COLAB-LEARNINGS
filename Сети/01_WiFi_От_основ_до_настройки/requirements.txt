@@ -1,0 +1,7 @@
+# Зависимости для обучающего ноутбука по Wi-Fi
+# Установка: pip install -r requirements.txt
+
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+cryptography>=42.0
